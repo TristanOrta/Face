@@ -1,22 +1,29 @@
 body{
-	background-image: url("grid.png");
+	
+
+	/*esta linea sirve para hacer el degradado del fondo de pantalla si no todo se veria 
+	de un solo color y se notaria la imgen de mundo */
+	
+	background: -moz-linear-gradient(white,#e1e4ef); /* For Firefox 3.6 to 15 */
+
+
 	height:750px;
 	
 }
-.fb-header-base{
+.encabezado-base{
 	width:100%;
-	height:90px;
+	height:83px;
 	position:absolute;
 	top:0;
 	left:0;
 	color:white;
 	z-index:7;
 	font-family:verdana;
-	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	
 }
-.fb-header{
+.encabezado{
 	width:100%;
-	height:90px;
+	height:83px;
 	position:absolute;
 	background:#3d5b99;
 	top:0;
@@ -56,7 +63,7 @@ body{
 	position: absolute;
 	z-index:20;
 	height:22px;
-	width:50px;
+	width:100px;
 	cursor:pointer;
 	
 
@@ -70,6 +77,18 @@ body{
 	height:645px;
 	
 
+}
+.fb-header{
+	width:100%;
+	height:90px;
+	position: inherit;
+	background:#3d5b99;
+	top:0;
+	left:0;
+	color:white;
+	z-index:7;
+	font-family:verdana;
+	
 }
 #intro1{
 	left:178px;
@@ -109,15 +128,15 @@ body{
 	top:120px;
 	left:750px;
 	font-family:verdana;
-	font-size:20px;
+	font-size:15px;
 	color:#142170;
 	width:450px;
 	height:495px;
 	
 }
 #namebox{
-	width:200px;
-	height:40px;
+	width:150px;
+	height:15px;
 	border-radius:5px 5px 5px 5px;
 	background:white;
 	padding:10px;
@@ -126,10 +145,11 @@ body{
 	border-width: 1px;
 	border-style:solid;
 	border-color: gray;
+	display:inline-block;
 }
 #correobox{
-	width:408px;
-	height:40px;
+	width:328px;
+	height:15px;
 	border-radius:5px 5px 5px 5px;
 	background:white;
 	padding:10px;
@@ -161,31 +181,23 @@ body{
 	outline:none;
 	
 }
-#intro4{
+.intro4{
 	font-family:verdana;
 	font-size:12px;
 	color:gray;
 	
 }
-#intro5{
+
+.intro5{
+	font-size:10px;
 	font-family:verdana;
-	font-size:14px;
-	color:gray;
-	
+	height:30px;
+	width:450px;
+
 }
-.fb-body-footer{
-	width:100%;
-	position:absolute;
-	left:0px;
-	height:80px;
-	background:white;
-	top:700px;
-	
-}
-#fb-body-footer-base{
-	width:900px;
-	top:15px;
-	left:200px;
-	color:blue;
-	height:60px;
-}
+
+a{
+	color:white;
+  }
+
+ 
